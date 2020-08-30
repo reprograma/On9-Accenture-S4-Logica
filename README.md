@@ -288,3 +288,145 @@ Neste exemplo, a variável `index` está sendo usada para representar o índice 
 - [`reduce`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 - [`spread`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 - [`rest`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+---
+
+### Objetos
+
+Objetos são estruturas que nos permitem "embalar" dados e funcionalidades relacionadas e um unico container.
+
+> Sabia que arrays também são objetos?
+
+Exemplo de objeto em javascript:
+
+> DICA: vale a pena notar que, enquanto podemos representar objetos do mundo real como objetos JavaScript, a analogia nem sempre é válida. É uma boa forma para pensar sobre a estrutura e propósito dos objetos, mas, à medida que você continua sua carreira de desenvolvedor, descobrirá que objetos em JavaScript podem ser comportar de maneira muito diferente dos objetos do mundo real.
+
+> NOTA: `typeof` é um operador que retorna o nome do tipo de dado que o segue:
+
+```javascript
+typeof "hello"; // retorna "string"
+typeof true; // retorna "boolean"
+typeof [1, 2, 3]; // retorna "object" (Arrays são do tipo bject)
+typeof function hello() {}; // retorna "function"
+```
+
+#### Dados primitivos do javascript
+
+- strings
+- numbers
+- booleans
+- undefined
+- null
+
+#### O que é um objeto?
+
+Objetos são estruturas de dados no Javascript que podem armazenar dados de uma determinada coisa e nos ajuda a encontrar esses dados usando o conceito de `chave` e `valor`
+
+Exemplo:
+
+```javascript
+let celular = {
+  color: "black",
+  model: "Samsung S9",
+  year: 2019,
+  system: "Android",
+  isUpToDate: true,
+};
+```
+
+```javascript
+let person = {
+  name: "Maria",
+  age: 25,
+  parents: ["Pedro", "Joana"],
+  siblings: ["Marta"],
+  favoriteColor: "red",
+  pets: true,
+};
+```
+
+A sintaxe que você vê acima é chamada notação literal de objeto. Há algumas coisas importantes de que você precisa se lembrar quando está estruturando um objeto literal:
+
+A "chave" (representando o nome da propriedade ou método) e seu "valor" são separados de cada um por dois pontos
+Os pares chave: valor são separados de cada um por vírgulas
+O objeto inteiro é colocado dentro de chaves `{ }`.
+
+E, assim como você pode procurar por uma palavra no dicionário para encontrar sua definição, a chave em um par chave:valor permite que você busque uma informação sobre um objeto. Aqui estão alguns exemplos de como você pode recuperar informações sobre os pais da minha irmã usando o objeto criado por você.
+
+```javascript
+// duas maneiras equivalentes de usar a chave para retornar seu valor
+sister["parents"]; // retorna [ "Pedro", "Joana" ]
+sister.parents; // também retorna ["Pedro", "Joana"]
+```
+
+O uso de `sister["parents"]` é chamado de **notação de colchetes** (por causa dos colchetes!) e o uso de `sister.parents` é chamado de **notação de ponto** (por causa do ponto!).
+
+#### Métodos
+
+O objeto acima contém um bocado de propriedades sobre uma pessoa, mas não diz realmente o que a pessoa faz. Por exemplo, digamos que a pessoa goste de pintar. Você pode ter um método `paintPicture()` que retorna "Maria pintou um retrato" toda vez que chamá-lo.
+
+A sintaxe para isso é muito semelhante a como você definiu as propriedades do objeto.
+
+A única diferença é que o valor no par chave:valor será uma função.
+
+```javascript
+let person = {
+  name: "Maria",
+  age: 25,
+  parents: ["Pedro", "Joana"],
+  siblings: ["Marta"],
+  favoriteColor: "red",
+  pets: true,
+  paintPicture: function () {
+    return "Maria pinta!";
+  },
+};
+
+person.paintPicture();
+// Retorna: "Maria pinta!"
+```
+
+Você também pode ver o nome da pessoa acessando a propriedade `name`:
+
+```javascript
+person.name;
+// Retorna "Maria"
+```
+
+Objetos são uma das mais importantes estruturas de dados em JavaScript. Prepare-se para vê-los em todos os lugares!
+
+Eles possuem propriedades (informações sobre o objeto) e métodos (funções ou capacidades que o objeto tem).
+
+Objetos são um tipo de dado incrivelmente poderoso, e você os verá em todos os lugares quando trabalhar com JavaScript ou qualquer outra linguagem de programação orientada a objetos.
+
+#### Objetos literais, métodos e propriedades
+
+Você pode definir objetos usando a notação literal de objeto:
+
+```javascript
+let myObject = {
+  color: "orange",
+  shape: "sphere",
+  type: "food",
+  eat: function () {
+    return "yummy";
+  },
+};
+
+myObj.eat(); // método
+myObj.color; // propriedade
+```
+
+#### Convenções de nomenclatura
+
+Fique à vontade para usar números e letras maiúsculas ou minúsculas, mas não inicie o nome de sua propriedade com um número. Você não precisa envolver a string com aspas! Se é uma propriedade com mais de uma palavra, use camel case. Não use hífens no nome de suas propriedades
+
+```javascript
+var garfield = {
+  "1stCat": true;
+  "loves-lasagna": true;
+};
+
+garfield.1stSon // error
+garfield.loves-lasagna // error
+```
