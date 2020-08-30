@@ -41,7 +41,7 @@ reverseMe = ["h", "e", "l", "l", "o"];
 5. Crie um método para o objeto `pessoa` chamado `apresentacao`. Esse método deve
    retornar a string:
 
-> "Olá, eu sou [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
+> "Olá, eu sou [NOME COMPLETO], tenho [IDADE] anos, minha é [ALTURA] e só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
 
 Só que, antes de retornar a string, você vai fazer algumas validações:
 
