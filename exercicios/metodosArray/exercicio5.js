@@ -1,8 +1,10 @@
-let sabores = ["Limão", "Milho", "Napolitano", "Maracujá"];
+let sabores = ["Limão", "Milho", "Napolitano", "Maracujá", "Flocos"];
 
-function topissimos(array) {
-  if (sabores.length < 5) {
+function topissimos(listaDeSabores) {
+  if (listaDeSabores.length < 5) {
     return false;
+  } else {
+    return true;
   }
-  return true;
 }
+console.log(topissimos(sabores));
