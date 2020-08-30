@@ -237,63 +237,6 @@ Estado final após o `splice()`
 
 O primeiro argumento representa o **índice inicial** de onde você quer alterar a array, o segundo argumento representa o **número de elementos** que você quer remover e o restante dos argumentos representam os elementos que você quer adicionar.
 
-#### Exercícios
-
-Tempo da atividade: `20min`
-
-1. Crie um array e adicione pelo menos 5 elementos nele. Depois, imprima o array criado usando `console.log()`
-2. Crie um array de preços com as seguintes informações:
-
-- 1.23,
-- 48.11,
-- 90.11,
-- 8.50,
-- 9.99,
-- 1.00,
-- 1.10,
-- 67.00
-
-Altere o preço do 1°, 3°, 7° elemento.
-
-3. Decidimos renovar o sabor de alguns sorvetes.
-
-```javascript
-let sorvetes = [
-  "Coco",
-  "Maracujá",
-  "Abacaxi",
-  "Baunilha",
-  "Tangerina",
-  "Doce de Leite",
-  "Iogurte de frutas vermelhas",
-  "Melancia",
-  "Chocolate",
-  "Chocolate Belga",
-  "Torta de limão",
-];
-```
-
-Precisamos que você retire do cardápio o sabor `Iogurte de frutas vermelhas` e acrescente os sabores `Paçoquita` e `Passas ao rum`.
-
-4. (Utilize o array acima para fazer este exercício)
-
-Faremos um evento corporativo e por isso reduziremos nosso cardápio, levando apenas os 3 primeiros sabores da nossa lista. Remova todos os outros sabores.
-
-5. Top 5 dos melhores sabores
-   Considere o seguinte array:
-
-```javascript
-let sabores = ["Limão", "Milho", "Napolitano", "Maracujá"];
-```
-
-Escreva uma funcão chamada `topissimos()` que recebe um array como parâmetro.
-
-Retorne `true` ou `false` dependendo de o array ter pelo menos 5 sabores.
-
-> dica: Modifique o array para validar se sua função está retornando o valor correto.
-
-Imprima no console o resultado.
-
 ---
 
 ### Loops & Arrays
@@ -336,30 +279,6 @@ console.log(sorvetes)[
 Neste exemplo, a variável `index` está sendo usada para representar o índice do array.
 
 À medida que `index` é incrementado, você passa em cada elemento da array, começando de 0 até chegar a sorvetes.length - 1 (sorvete.length está fora do limite).
-
-#### Exercícios
-
-1. Cadastro de sorvetes
-
-Escreva um programa que faça o seguinte:
-
-- pergunte para a usuária o sabor a ser cadastrado
-- se a usuaria digitar 0, imprima a lista de sabores que ela cadastrou e saia do programa.
-
-2. Escreva uma função que recebe 2 parametros: array e número.
-   Você deverá usar um laço de repetição para remover do array a quantidade exata passada como parametro da função.
-
-Por fim, imprima no console o array modificado pela sua função
-Exemplo:
-
-```javascript
-let sorvetes = ["Chocolate", "Creme", "Iogurte"];
-
-removeSabor(array, 2);
-
-console.log(sorvetes);
-// retorna ["Chocolate]
-```
 
 ### Conteúdo Extra Aula: Outros métodos de arrays:
 
