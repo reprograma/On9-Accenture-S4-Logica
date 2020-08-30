@@ -1,4 +1,4 @@
-1. Crie um objeto `breakfast` para representar o seguinte item do menu:
+1. Crie um objeto `lunch` para representar o seguinte item do menu:
 
 ```
 Feijoada - R$12,99
