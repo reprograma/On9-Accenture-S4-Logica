@@ -20,3 +20,7 @@ sorvetes.pop();
 sorvetes.pop();
 sorvetes.pop();
 sorvetes.pop();
+
+// outra maneira de fazer a mesma coisa
+sorvetes.splice(3, 8);
+console.log(sorvetes);
