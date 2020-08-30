@@ -1,0 +1,24 @@
+{
+  "name": "On9-Accenture-S4-Logica",
+  "version": "1.0.0",
+  "description": "Lógica - Objetos, Arrays e Métodos",
+  "main": "index.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reprograma/On9-Accenture-S4-Logica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reprograma/On9-Accenture-S4-Logica/issues"
+  },
+  "homepage": "https://github.com/reprograma/On9-Accenture-S4-Logica#readme"
+}
