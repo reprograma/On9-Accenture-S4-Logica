@@ -1,11 +1,14 @@
-/* Função disco da Xuxa, o retorno.
-Use a documentação MDN para determinar quais destes métodos seria o melhor para reverter elementos nesta array:
+/* Crie uma função que retorna a soma dos elementos de um array. Exemplo:
+    //soma = 1 + 2 + 3 + 4 + 5 = 15 */
 
-reverseMe = ["h", "e", "l", "l", "o"]; */
+let numeros = [1, 2, 3, 4, 5];
+let soma = 0;
 
-const reverseMe = ["h", "e", "l", "l", "o"];
+function somaElementos(array) {
+  for (let index = 0; index < array.length; index++) {
+    soma += array[index];
+  }
+  console.log(`A soma dos elementos do array é: ${soma}`);
+}
 
-const reversed = reverseMe.reverse();
-console.log('Texto revertido:', reversed);
-
-
+somaElementos(numeros);
