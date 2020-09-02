@@ -35,7 +35,7 @@ Adicione "Purple"
 
   console.log("\nAdicione Purple:");
   console.log("----------");
-  rainbow.push("Purple")
+  rainbow.splice(5,0,"Purple")
   console.log(rainbow);
   
 
