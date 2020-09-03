@@ -7,8 +7,10 @@ let soma = 0;
 function somaElementos(array) {
   for (let index = 0; index < array.length; index++) {
     soma += array[index];
+
+    return soma
   }
-  console.log(`A soma dos elementos do array é: ${soma}`);
+  // console.log(`A soma dos elementos do array é: ${soma}`);
 }
 
 somaElementos(numeros);
