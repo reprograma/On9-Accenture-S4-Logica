@@ -413,8 +413,8 @@ let myObject = {
   },
 };
 
-myObj.eat(); // método
-myObj.color; // propriedade
+myObject.eat(); // método
+myObject.color; // propriedade
 ```
 
 #### Convenções de nomenclatura
