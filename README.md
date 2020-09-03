@@ -423,7 +423,7 @@ Fique à vontade para usar números e letras maiúsculas ou minúsculas, mas nã
 
 ```javascript
 var garfield = {
-  "1stCat": true;\,
+  "1stCat": true,
   "loves-lasagna": true
 };
 
