@@ -355,11 +355,11 @@ E, assim como você pode procurar por uma palavra no dicionário para encontrar 
 
 ```javascript
 // duas maneiras equivalentes de usar a chave para retornar seu valor
-sister["parents"]; // retorna [ "Pedro", "Joana" ]
-sister.parents; // também retorna ["Pedro", "Joana"]
+person["parents"]; // retorna [ "Pedro", "Joana" ]
+person.parents; // também retorna ["Pedro", "Joana"]
 ```
 
-O uso de `sister["parents"]` é chamado de **notação de colchetes** (por causa dos colchetes!) e o uso de `sister.parents` é chamado de **notação de ponto** (por causa do ponto!).
+O uso de `person["parents"]` é chamado de **notação de colchetes** (por causa dos colchetes!) e o uso de `person.parents` é chamado de **notação de ponto** (por causa do ponto!).
 
 #### Métodos
 
@@ -413,8 +413,8 @@ let myObject = {
   },
 };
 
-myObj.eat(); // método
-myObj.color; // propriedade
+myObject.eat(); // método
+myObject.color; // propriedade
 ```
 
 #### Convenções de nomenclatura
@@ -423,10 +423,10 @@ Fique à vontade para usar números e letras maiúsculas ou minúsculas, mas nã
 
 ```javascript
 var garfield = {
-  "1stCat": true;
-  "loves-lasagna": true;
+  "1stCat": true,
+  "loves-lasagna": true
 };
 
-garfield.1stSon // error
+garfield.1stCat // error
 garfield.loves-lasagna // error
 ```
