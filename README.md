@@ -293,7 +293,7 @@ Neste exemplo, a variável `index` está sendo usada para representar o índice 
 
 ### Objetos
 
-Objetos são estruturas que nos permitem "embalar" dados e funcionalidades relacionadas e um unico container.
+Objetos são estruturas que nos permitem  lacionadas e um unico container.
 
 > Sabia que arrays também são objetos?
 
