@@ -6,7 +6,7 @@ let opcaoSair;
 
 while (opcaoSair !== 0) {
   let input = readlineSync.question(
-    "Digite o sabor do sorvete ou 0 para sair:  "
+    "Digite o sabor do sorvete ou 0 para sair: "
   );
   if (input === "0") {
     opcaoSair = 0;
