@@ -25,3 +25,13 @@ dados.push(metro);
 console.log("Dados Cadastrados:  "+dados)
 
 //fazer um objeto
+console.log("\n================2aOpção===============")
+
+let exemploObjeto = {
+    seuNome: nome,
+    suaIdade: idade,
+    suaAltura: altura,
+    suaCaminhada: metro,
+  };
+  
+  console.log(exemploObjeto)
