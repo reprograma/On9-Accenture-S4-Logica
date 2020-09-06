@@ -16,4 +16,5 @@ console.log("Array1: ", reverseMe);
 const reversed = reverseMe.reverse();
 console.log("Array 1 revertido: ", reversed);
 
+const 
 

@@ -24,3 +24,4 @@ dados.push(metro);
 
 console.log("Dados Cadastrados:  "+dados)
 
+//fazer um objeto
