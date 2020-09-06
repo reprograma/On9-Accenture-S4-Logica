@@ -36,7 +36,7 @@ Seu saldo atual é de R$1000 e sua taxa de juros é de 1%.
 
 3. Usando o objeto do quiz anterior, responda à seguinte pergunta:
 
-Quais da seguintes são maneiras válidas para acessar propriedades e chamar métodos de um objeto chamado contaCorrente?
+Quais são as maneiras válidas para acessar propriedades e chamar métodos de um objeto chamado contaCorrente?
 
 4. Crie um objeto chamado `facebookProfile`. O objeto deve ter três propriedades:
 
