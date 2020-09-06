@@ -10,16 +10,43 @@ mostrando a resposta correta, de acordo com os dados inseridos no objeto. */
 
 const readlineSync = require("readline-sync");
 
-const nome = readlineSync.question("Digite seu nome completo: "); 
+let nome = readlineSync.question("Digite seu nome completo: "); 
 
 let idade = readlineSync.question("Digite a sua idade: ")
 
-const altura = readlineSync.question("Digite a sua altura: ")
+let altura = readlineSync.question("Digite a sua altura: ")
 
 let metro = readlineSync.question("Digite qto metros vc caminha por dia: ")
 
 
-let pessoa = {
+let pessoaCadastrada = {
+    seuNome: nome,
+    suaIdade: idade,
+    suaAltura: altura,
+    suaCaminhada: metro,
+
+    frase: function(anos, caminhada){
+        let idadeUm = " ano"
+        if(anos === 1){
+            pessoaCadastrada.suaIdade += anos += idadeUm
+        } else {
+            idadeUm = " anos"
+            pessoaCadastrada.suaIdade += anos += idadeUm
+        }
+        let metroUm = " metro"
+        if (caminhada === 1 ){
+            pessoaCadastrada.suaCaminhada += caminhada += metroUm
+        } else {
+            metroUm = " metros"
+            pessoaCadastrada.suaCaminhada += caminhada += metroUm
+
+        }
+        return `Olá, eu sou ${pessoaCadastrada.seuNome}, tenho ${pessoaCadastrada.suaIdade} minha altura é ${pessoaCadastrada.suaAltura} e só hoje, eu já caminhei ${pessoaCadastrada.suaCaminhada}!`
+    }
+}
+console.log(pessoaCadastrada.frase())
+
+/* let pessoa = {
     nombre: nome,
     edadprimero: idade,
     edad: function () {
@@ -37,9 +64,9 @@ let pessoa = {
         }
     },
 }
+ */
+
+/* console.log(`Olá, eu sou ${pessoa.nombre}, tenho ${idade} anos, minha altura é ${pessoa.suaAltura} e só hoje, eu já caminhei ${metros} metros!`)
 
 
-console.log(`Olá, eu sou ${pessoa.nombre}, tenho ${idade} anos, minha altura é ${pessoa.suaAltura} e só hoje, eu já caminhei ${metros} metros!`)
-
-
-
+ */
